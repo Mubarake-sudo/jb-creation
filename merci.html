@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Merci — JB CREATION</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --ink: #0A0E17;
+        --red: #E30613;
+        --cream: #FAF6EF;
+        --white: #FFFFFF;
+        --muted: #5C6478;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+        background: linear-gradient(135deg, var(--cream), #f5efe2);
+        color: var(--ink);
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+      }
+      .card {
+        max-width: 600px;
+        width: min(90vw, 600px);
+        background: rgba(255,255,255,0.8);
+        border: 1px solid rgba(10,14,23,0.06);
+        border-radius: 28px;
+        padding: 52px 30px;
+        text-align: center;
+        box-shadow: 0 18px 44px rgba(10,27,92,0.08);
+      }
+      h1 {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: clamp(2rem, 4vw, 3rem);
+      }
+      p {
+        color: var(--muted);
+        font-size: 1.02rem;
+        line-height: 1.8;
+        margin: 16px 0 28px;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 14px 28px;
+        border-radius: 999px;
+        background: var(--red);
+        color: var(--white);
+        font-weight: 700;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <h1>Merci !</h1>
+      <p>Votre demande a bien été reçue. Notre équipe JB CREATION vous répondra dans les plus brefs délais.</p>
+      <a class="btn" href="index.html">Retour à l'accueil</a>
+    </main>
+  </body>
+</html>
