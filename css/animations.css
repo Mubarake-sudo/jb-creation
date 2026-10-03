@@ -1,0 +1,32 @@
+
+      @keyframes pulse { 0%, 100% { box-shadow: 0 0 0 rgba(26, 91, 255, 0.0); } 50% { box-shadow: 0 0 0 14px rgba(26, 91, 255, 0.1); } }
+      @keyframes loaderLogo {
+        from { opacity: 0; transform: scale(0.9); }
+        to { opacity: 1; transform: scale(1); }
+      }
+      @keyframes blink { 50% { opacity: 0; } }
+      @keyframes floatImage { 0% { transform: translateY(0); } 50% { transform: translateY(-8px); } 100% { transform: translateY(8px); } }
+      @keyframes floatBadge { 0% { transform: translateY(0); } 50% { transform: translateY(-8px); } 100% { transform: translateY(8px); } }
+      @keyframes scrollPartners {
+        from { transform: translateX(0); }
+        to { transform: translateX(-50%); }
+      }
+      @keyframes scrollStats { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+      @keyframes whatsappIn { to { opacity: 1; transform: scale(1); } }
+      @keyframes pulseWa { 0%, 100% { box-shadow: 0 0 0 rgba(37,211,102,0.0); } 50% { box-shadow: 0 0 0 18px rgba(37,211,102,0.12); } }
+    @keyframes projectEnter {
+      from { opacity: 0; transform: translateY(18px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .project-view:not([hidden]) .project-container { animation: projectEnter 450ms var(--ease) both; }
+
+  /* Définition du mouvement de défilement */
+  @keyframes scrollMarquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      /* Déplace la barre de la moitié de sa largeur totale (la première série) */
+      transform: translateX(calc(-50% - 30px)); 
+    }
+  }
